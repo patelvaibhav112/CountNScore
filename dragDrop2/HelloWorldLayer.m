@@ -16,6 +16,7 @@
 #pragma mark - HelloWorldLayer
 #include <math.h>
 #import "Model.h"
+#import "CCShake.h"
 
 // HelloWorldLayer implementation
 @implementation HelloWorldLayer
@@ -143,12 +144,13 @@
     if(CGRectContainsPoint(diceSprite.boundingBox, touchLocation))
     {        
         [diceSprite stopAllActions];
-        [diceSprite runAction:[CCRotateTo actionWithDuration:0.1 angle:0]];
-        
-        CCRotateTo * rotate = [CCRotateBy actionWithDuration:0.3 angle:360];
+        //[diceSprite runAction:[CCRotateTo actionWithDuration:0.1 angle:0]];
+        //[diceSprite runAction:[CCShake actionWithDuration:.05f amplitude:ccp(16,16) dampening:false shakes:2]];
+        [diceSprite runAction:[CCShake actionWithDuration:0.9f amplitude:ccp(40,40) dampening:true]];
+        /*CCRotateTo * rotate = [CCRotateBy actionWithDuration:0.3 angle:360];
         CCSequence * rotSeq = [CCSequence actions:rotate, nil];
         
-        [diceSprite runAction:[CCRepeat actionWithAction:rotSeq times:3]];
+        [diceSprite runAction:[CCRepeat actionWithAction:rotSeq times:3]];*/
         int index = [self.model randomDice];
         CCTexture2D * newDice = [diceImages objectAtIndex:index];
         diceSprite.texture = newDice;
