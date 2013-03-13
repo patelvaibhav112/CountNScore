@@ -30,6 +30,7 @@
     
 	self.mySprite =  [CCSprite spriteWithFile:filename];
     self.mySprite.position = ccp(self.originalPosition.x, self.originalPosition.y);
+    [self.mySprite setScale:0.5];
     self.putInBasket = NO;
     self.index = index;
     return self;

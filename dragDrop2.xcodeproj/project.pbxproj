@@ -9,6 +9,21 @@
 /* Begin PBXBuildFile section */
 		0F202C7F16F06AC000364DDD /* new_Dice1.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F202C7E16F06AC000364DDD /* new_Dice1.png */; };
 		0F202C8516F06C8500364DDD /* CCShake.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F202C8416F06C8500364DDD /* CCShake.m */; };
+		0F508FA416F0D8CA00FC5C40 /* terran.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F508F9516F0D8CA00FC5C40 /* terran.png */; };
+		0F508FA516F0D8CA00FC5C40 /* bucket.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F508F9616F0D8CA00FC5C40 /* bucket.png */; };
+		0F508FA616F0D8CA00FC5C40 /* tree.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F508F9716F0D8CA00FC5C40 /* tree.png */; };
+		0F508FA716F0D8CA00FC5C40 /* sign.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F508F9816F0D8CA00FC5C40 /* sign.png */; };
+		0F508FA816F0D8CA00FC5C40 /* pie.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F508F9916F0D8CA00FC5C40 /* pie.png */; };
+		0F508FA916F0D8CA00FC5C40 /* apple10.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F508F9A16F0D8CA00FC5C40 /* apple10.png */; };
+		0F508FAA16F0D8CA00FC5C40 /* apple9.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F508F9B16F0D8CA00FC5C40 /* apple9.png */; };
+		0F508FAB16F0D8CA00FC5C40 /* apple8.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F508F9C16F0D8CA00FC5C40 /* apple8.png */; };
+		0F508FAC16F0D8CA00FC5C40 /* apple7.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F508F9D16F0D8CA00FC5C40 /* apple7.png */; };
+		0F508FAD16F0D8CA00FC5C40 /* apple6.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F508F9E16F0D8CA00FC5C40 /* apple6.png */; };
+		0F508FAE16F0D8CA00FC5C40 /* apple5.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F508F9F16F0D8CA00FC5C40 /* apple5.png */; };
+		0F508FAF16F0D8CA00FC5C40 /* apple4.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F508FA016F0D8CA00FC5C40 /* apple4.png */; };
+		0F508FB016F0D8CA00FC5C40 /* apple3.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F508FA116F0D8CA00FC5C40 /* apple3.png */; };
+		0F508FB116F0D8CA00FC5C40 /* apple2.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F508FA216F0D8CA00FC5C40 /* apple2.png */; };
+		0F508FB216F0D8CA00FC5C40 /* apple1.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F508FA316F0D8CA00FC5C40 /* apple1.png */; };
 		0F52E4A416EF67D600E5DA6C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F52E4A316EF67D600E5DA6C /* QuartzCore.framework */; };
 		0F52E4A616EF67D600E5DA6C /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F52E4A516EF67D600E5DA6C /* OpenGLES.framework */; };
 		0F52E4A816EF67D600E5DA6C /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F52E4A716EF67D600E5DA6C /* OpenAL.framework */; };
@@ -156,6 +171,21 @@
 		0F202C7E16F06AC000364DDD /* new_Dice1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = new_Dice1.png; sourceTree = "<group>"; };
 		0F202C8316F06C8500364DDD /* CCShake.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCShake.h; sourceTree = "<group>"; };
 		0F202C8416F06C8500364DDD /* CCShake.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCShake.m; sourceTree = "<group>"; };
+		0F508F9516F0D8CA00FC5C40 /* terran.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = terran.png; sourceTree = "<group>"; };
+		0F508F9616F0D8CA00FC5C40 /* bucket.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bucket.png; sourceTree = "<group>"; };
+		0F508F9716F0D8CA00FC5C40 /* tree.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tree.png; sourceTree = "<group>"; };
+		0F508F9816F0D8CA00FC5C40 /* sign.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sign.png; sourceTree = "<group>"; };
+		0F508F9916F0D8CA00FC5C40 /* pie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pie.png; sourceTree = "<group>"; };
+		0F508F9A16F0D8CA00FC5C40 /* apple10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = apple10.png; sourceTree = "<group>"; };
+		0F508F9B16F0D8CA00FC5C40 /* apple9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = apple9.png; sourceTree = "<group>"; };
+		0F508F9C16F0D8CA00FC5C40 /* apple8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = apple8.png; sourceTree = "<group>"; };
+		0F508F9D16F0D8CA00FC5C40 /* apple7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = apple7.png; sourceTree = "<group>"; };
+		0F508F9E16F0D8CA00FC5C40 /* apple6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = apple6.png; sourceTree = "<group>"; };
+		0F508F9F16F0D8CA00FC5C40 /* apple5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = apple5.png; sourceTree = "<group>"; };
+		0F508FA016F0D8CA00FC5C40 /* apple4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = apple4.png; sourceTree = "<group>"; };
+		0F508FA116F0D8CA00FC5C40 /* apple3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = apple3.png; sourceTree = "<group>"; };
+		0F508FA216F0D8CA00FC5C40 /* apple2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = apple2.png; sourceTree = "<group>"; };
+		0F508FA316F0D8CA00FC5C40 /* apple1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = apple1.png; sourceTree = "<group>"; };
 		0F52E49F16EF67D600E5DA6C /* dragDrop2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dragDrop2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F52E4A316EF67D600E5DA6C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		0F52E4A516EF67D600E5DA6C /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -506,6 +536,21 @@
 		0F52E4B616EF67D700E5DA6C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				0F508F9516F0D8CA00FC5C40 /* terran.png */,
+				0F508F9616F0D8CA00FC5C40 /* bucket.png */,
+				0F508F9716F0D8CA00FC5C40 /* tree.png */,
+				0F508F9816F0D8CA00FC5C40 /* sign.png */,
+				0F508F9916F0D8CA00FC5C40 /* pie.png */,
+				0F508F9A16F0D8CA00FC5C40 /* apple10.png */,
+				0F508F9B16F0D8CA00FC5C40 /* apple9.png */,
+				0F508F9C16F0D8CA00FC5C40 /* apple8.png */,
+				0F508F9D16F0D8CA00FC5C40 /* apple7.png */,
+				0F508F9E16F0D8CA00FC5C40 /* apple6.png */,
+				0F508F9F16F0D8CA00FC5C40 /* apple5.png */,
+				0F508FA016F0D8CA00FC5C40 /* apple4.png */,
+				0F508FA116F0D8CA00FC5C40 /* apple3.png */,
+				0F508FA216F0D8CA00FC5C40 /* apple2.png */,
+				0F508FA316F0D8CA00FC5C40 /* apple1.png */,
 				0F202C7E16F06AC000364DDD /* new_Dice1.png */,
 				0F52E68316F0483200E5DA6C /* Untitled-2Artboard-1Background.png */,
 				0F52E6A216F068B600E5DA6C /* new_dice2.png */,
@@ -974,6 +1019,21 @@
 				0F52E6AB16F068BB00E5DA6C /* new_dice5.png in Resources */,
 				0F52E6AC16F068BB00E5DA6C /* new_dice6.png in Resources */,
 				0F202C7F16F06AC000364DDD /* new_Dice1.png in Resources */,
+				0F508FA416F0D8CA00FC5C40 /* terran.png in Resources */,
+				0F508FA516F0D8CA00FC5C40 /* bucket.png in Resources */,
+				0F508FA616F0D8CA00FC5C40 /* tree.png in Resources */,
+				0F508FA716F0D8CA00FC5C40 /* sign.png in Resources */,
+				0F508FA816F0D8CA00FC5C40 /* pie.png in Resources */,
+				0F508FA916F0D8CA00FC5C40 /* apple10.png in Resources */,
+				0F508FAA16F0D8CA00FC5C40 /* apple9.png in Resources */,
+				0F508FAB16F0D8CA00FC5C40 /* apple8.png in Resources */,
+				0F508FAC16F0D8CA00FC5C40 /* apple7.png in Resources */,
+				0F508FAD16F0D8CA00FC5C40 /* apple6.png in Resources */,
+				0F508FAE16F0D8CA00FC5C40 /* apple5.png in Resources */,
+				0F508FAF16F0D8CA00FC5C40 /* apple4.png in Resources */,
+				0F508FB016F0D8CA00FC5C40 /* apple3.png in Resources */,
+				0F508FB116F0D8CA00FC5C40 /* apple2.png in Resources */,
+				0F508FB216F0D8CA00FC5C40 /* apple1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -48,19 +48,28 @@
         [self addChild:background];
         
         
-        basket = [CCSprite spriteWithFile:@"Icon@2x.png"];
+        basket = [CCSprite spriteWithFile:@"bucket.png"];
         basket.anchorPoint = ccp(0,0);
-        basket.position = ccp(winSize.width - basket.contentSize.width,10);
+        basket.position = ccp(winSize.width - (basket.contentSize.width*0.60),10);
+        [basket setScale:0.60];
         [self addChild:basket];
         
         movableSprites = [[NSMutableArray alloc] init];
-        NSArray *images = [NSArray arrayWithObjects:@"bird.png",
-                                                    @"cat.png",
-                                                    @"dog.png",
-                                                    @"turtle.png",
+        NSArray *images = [NSArray arrayWithObjects:@"apple1.png",
+                                                    @"apple2.png",
+                                                    @"apple3.png",
+                                                    @"apple4.png",
+                                                    @"apple5.png",
+                                                    nil];
+        NSArray *images2 = [NSArray arrayWithObjects:@"apple6.png",
+                                                    @"apple7.png",
+                                                    @"apple8.png",
+                                                    @"apple9.png",
+                                                    @"apple10.png",
                                                     nil];
         
-  
+        [self drawApples:images withRadius:40.0 withOffset:1.0];
+        [self drawApples:images2 withRadius:80.0 withOffset:1.2];
         
         diceImages = [[NSMutableArray alloc]init];
         CCTexture2D *dice1 = [[CCTextureCache sharedTextureCache] addImage:@"new_Dice1.png"];
@@ -84,42 +93,56 @@
         [diceImages addObject:dice6];
         
         diceSprite = [CCSprite spriteWithTexture: [diceImages objectAtIndex:0]];
-        //diceSprite.anchorPoint = ccp(0,0);
+        
+        diceSprite.anchorPoint = ccp(0,0);
+        
         diceSprite.position = ccp(winSize.width - (diceSprite.contentSize.width/2),
                                 (winSize.height - (diceSprite.contentSize.height/2)));
+        [diceSprite setScale:0.50];
         [self addChild:diceSprite];
         
         
         
-        float center_y = winSize.height/2;
-        float center_x = winSize.width/2;
-        float radius = 50.0;
-        float theta = 0.0;
         
-        for(int i = 0; i < images.count; ++i) {
-            
-            NSString *image = [images objectAtIndex:i];
-            
-            //float offsetFraction = ((float)(i+1))/(images.count+1);
-            
-            theta = (i+1)*(360/images.count);
-            float cosTheta = cos(theta *(M_PI/180));
-            float sinTheta = sin(theta *(M_PI/180));
-            
-            double x = center_x + radius * cosTheta;
-            double y = center_y + radius * sinTheta;
-            CGPoint position = {x,y};
-
-            //AppleSprite *apple = [[AppleSprite alloc]initWith:position File:image arrayIndex:i];
-            AppleSprite *apple = [[AppleSprite alloc]initWith:position file:image arrayIndex:i];
-            [self addChild:apple.mySprite];
-            [movableSprites addObject:apple];
-        }
+        
+        
         
         [[[CCDirector sharedDirector] touchDispatcher] addTargetedDelegate:self priority:0 swallowsTouches:YES];
 
     }
     return self;
+}
+
+- (void)drawApples:(NSArray*)images
+        withRadius:(float)radius
+        withOffset:(float)offset
+{
+    CGSize winSize = [CCDirector sharedDirector].winSize;
+    
+    float center_y = winSize.height/2;
+    float center_x = winSize.width/2;
+    float theta = 0.0;
+    
+    for(int i = 0; i < images.count; ++i) {
+        
+        NSString *image = [images objectAtIndex:i];
+        
+        //float offsetFraction = ((float)(i+1))/(images.count+1);
+        
+        theta = (i+1)*(360/images.count);
+        float cosTheta = (cos(theta *(M_PI/(180*offset))));
+        float sinTheta = (sin(theta *(M_PI/(180*offset))));
+        
+        double x = (center_x) + (radius * cosTheta);
+        double y = center_y + (radius * sinTheta );
+        
+        CGPoint position = {x,y};
+        
+        //AppleSprite *apple = [[AppleSprite alloc]initWith:position File:image arrayIndex:i];
+        AppleSprite *apple = [[AppleSprite alloc]initWith:position file:image arrayIndex:i];
+        [self addChild:apple.mySprite];
+        [movableSprites addObject:apple];
+    }
 }
 - (void)selectSpriteForTouch:(CGPoint)touchLocation {
     AppleSprite * newSprite = nil;
@@ -188,6 +211,7 @@
                 
                 [movableSprites replaceObjectAtIndex:selSprite.index withObject:apple];
                 selSprite.putInBasket = YES;
+                selSprite.mySprite.opacity = 50;
                 
                 [self addChild:apple.mySprite];
             }
