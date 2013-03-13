@@ -47,6 +47,11 @@
         background.anchorPoint = ccp(0,0);
         [self addChild:background];
         
+        CCSprite *tree = [CCSprite spriteWithFile:@"tree.png"];
+        tree.anchorPoint = ccp(0,0);
+        tree.position = ccp(0, 50);
+        [tree setScale:0.60];
+        [self addChild:tree];
         
         basket = [CCSprite spriteWithFile:@"bucket.png"];
         basket.anchorPoint = ccp(0,0);
