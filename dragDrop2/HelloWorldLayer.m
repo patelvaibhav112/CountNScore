@@ -15,10 +15,11 @@
 
 #pragma mark - HelloWorldLayer
 #include <math.h>
+#import "Model.h"
 
 // HelloWorldLayer implementation
 @implementation HelloWorldLayer
-
+@synthesize model = _model;
 // Helper class method that creates a Scene with the HelloWorldLayer as the only child.
 +(CCScene *) scene
 {
@@ -37,13 +38,14 @@
 
 -(id) init {
     if((self = [super init])) {
+        self.model = [[Model alloc]init];
         CGSize winSize = [CCDirector sharedDirector].winSize;
         
-        [CCTexture2D setDefaultAlphaPixelFormat:kCCTexture2DPixelFormat_RGB565];
-        background = [CCSprite spriteWithFile:@"blue-shooting-stars_portrait.png"];
+        [CCTexture2D setDefaultAlphaPixelFormat:kCCTexture2DPixelFormat_Default];
+        background = [CCSprite spriteWithFile:@"Untitled-2Artboard-1Background.png"];
         background.anchorPoint = ccp(0,0);
         [self addChild:background];
-        [CCTexture2D setDefaultAlphaPixelFormat:kCCTexture2DPixelFormat_Default];
+        
         
         basket = [CCSprite spriteWithFile:@"Icon@2x.png"];
         basket.anchorPoint = ccp(0,0);
@@ -51,8 +53,41 @@
         [self addChild:basket];
         
         movableSprites = [[NSMutableArray alloc] init];
-        NSArray *images = [NSArray arrayWithObjects:@"bird.png", @"cat.png", @"dog.png", @"turtle.png", nil];
+        NSArray *images = [NSArray arrayWithObjects:@"bird.png",
+                                                    @"cat.png",
+                                                    @"dog.png",
+                                                    @"turtle.png",
+                                                    nil];
+        
+  
+        
+        diceImages = [[NSMutableArray alloc]init];
+        CCTexture2D *dice1 = [[CCTextureCache sharedTextureCache] addImage:@"new_Dice1.png"];
+        
+        CCTexture2D *dice2 = [[CCTextureCache sharedTextureCache] addImage:@"new_dice2.png"];
+        
+        CCTexture2D *dice3 = [[CCTextureCache sharedTextureCache] addImage:@"new_dice3.png"];
+        
+        CCTexture2D *dice4 =  [[CCTextureCache sharedTextureCache] addImage:@"new_dice4.png"];
+        
+        CCTexture2D *dice5 =   [[CCTextureCache sharedTextureCache] addImage:@"new_dice5.png"];
+        
+        CCTexture2D *dice6 =  [[CCTextureCache sharedTextureCache] addImage:@"new_dice6.png"];
+        
 
+        [diceImages addObject:dice1];
+        [diceImages addObject:dice2];
+        [diceImages addObject:dice3];
+        [diceImages addObject:dice4];
+        [diceImages addObject:dice5];
+        [diceImages addObject:dice6];
+        
+        diceSprite = [CCSprite spriteWithTexture: [diceImages objectAtIndex:0]];
+        //diceSprite.anchorPoint = ccp(0,0);
+        diceSprite.position = ccp(winSize.width - (diceSprite.contentSize.width/2),
+                                (winSize.height - (diceSprite.contentSize.height/2)));
+        [self addChild:diceSprite];
+        
         
         
         float center_y = winSize.height/2;
@@ -96,19 +131,34 @@
     if (newSprite.mySprite != selSprite.mySprite) {
         [selSprite.mySprite stopAllActions];
         [selSprite.mySprite runAction:[CCRotateTo actionWithDuration:0.1 angle:0]];
+        
         CCRotateTo * rotLeft = [CCRotateBy actionWithDuration:0.1 angle:-4.0];
         CCRotateTo * rotCenter = [CCRotateBy actionWithDuration:0.1 angle:0.0];
         CCRotateTo * rotRight = [CCRotateBy actionWithDuration:0.1 angle:4.0];
         CCSequence * rotSeq = [CCSequence actions:rotLeft, rotCenter, rotRight, rotCenter, nil];
-        [newSprite.mySprite runAction:[CCRepeatForever actionWithAction:rotSeq]];
+        
+        [newSprite.mySprite runAction:[CCRepeat actionWithAction:rotSeq times:10]];
         selSprite =  newSprite;
+    }
+    if(CGRectContainsPoint(diceSprite.boundingBox, touchLocation))
+    {        
+        [diceSprite stopAllActions];
+        [diceSprite runAction:[CCRotateTo actionWithDuration:0.1 angle:0]];
+        
+        CCRotateTo * rotate = [CCRotateBy actionWithDuration:0.3 angle:360];
+        CCSequence * rotSeq = [CCSequence actions:rotate, nil];
+        
+        [diceSprite runAction:[CCRepeat actionWithAction:rotSeq times:3]];
+        int index = [self.model randomDice];
+        CCTexture2D * newDice = [diceImages objectAtIndex:index];
+        diceSprite.texture = newDice;
     }
 }
 
 - (BOOL)ccTouchBegan:(UITouch *)touch withEvent:(UIEvent *)event {
     CGPoint touchLocation = [self convertTouchToNodeSpace:touch];
     [self selectSpriteForTouch:touchLocation];
-    return TRUE;
+    return TRUE; 
 }
 
 

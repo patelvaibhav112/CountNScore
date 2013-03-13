@@ -7,6 +7,7 @@
 //
 
 #import "AppleSprite.h"
+
 @interface AppleSprite()
 
 @end
