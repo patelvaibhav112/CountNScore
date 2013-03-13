@@ -18,11 +18,12 @@
 @synthesize mySprite = _mySprite;
 @synthesize putInBasket = _putInBasket;
 @synthesize index = _index;
-
+@synthesize weight = _weight;
 
 -(id)initWith:(CGPoint)position
       file:(NSString *)filename
         arrayIndex:(NSUInteger)index
+        weightValue:(int)weight
 {
     
     self.originalFilename = filename;
@@ -33,6 +34,7 @@
     [self.mySprite setScale:0.5];
     self.putInBasket = NO;
     self.index = index;
+    self.weight = weight;
     return self;
 }
 

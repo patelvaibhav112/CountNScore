@@ -11,6 +11,8 @@
 @interface Model : NSObject
 @property (assign,nonatomic) NSUInteger currentScore;
 @property (assign,nonatomic) NSUInteger currentPointsTotal;
+@property (strong,nonatomic) NSDictionary *weightTable;
+@property (assign, nonatomic) NSUInteger diceValue;
 -(void)addPoints:(NSInteger) points;
 -(void)resetAll;
 -(int)randomDice;

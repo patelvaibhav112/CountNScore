@@ -13,8 +13,15 @@
 @property (strong, nonatomic) NSString* originalFilename;
 @property (assign,nonatomic) CGPoint originalPosition;
 @property (assign, nonatomic) BOOL putInBasket;
-@property (assign,nonatomic) NSUInteger index;
+@property (assign, nonatomic)NSUInteger index;
+
 -(id)initWith:(CGPoint)position
          file:(NSString *)filename
-   arrayIndex:(NSUInteger)index;
+   arrayIndex:(NSUInteger)index
+  weightValue:(int)weight;
+
+
+@property (assign,nonatomic)int weight;
+
+
 @end

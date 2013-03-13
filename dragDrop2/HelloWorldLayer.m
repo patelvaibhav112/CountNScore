@@ -53,11 +53,22 @@
         [tree setScale:0.60];
         [self addChild:tree];
         
+        CCSprite *pie = [CCSprite spriteWithFile:@"pie.png"];
+        pie.anchorPoint = ccp(0,0);
+        pie.position = ccp(5, (winSize.height - (pie.contentSize.height*0.62)));
+        [pie setScale:0.60];
+        [self addChild:pie];
+        
+        scoreLabel = [[CCLabelBMFont alloc]initWithString:@"0" fntFile:@"Arial-hd.fnt"];
+        scoreLabel.position = ccp(pie.contentSize.width/2, pie.contentSize.height/2);
+        [pie addChild:scoreLabel];
+        
         basket = [CCSprite spriteWithFile:@"bucket.png"];
         basket.anchorPoint = ccp(0,0);
         basket.position = ccp(winSize.width - (basket.contentSize.width*0.60),10);
         [basket setScale:0.60];
         [self addChild:basket];
+        
         
         movableSprites = [[NSMutableArray alloc] init];
         NSArray *images = [NSArray arrayWithObjects:@"apple1.png",
@@ -73,8 +84,8 @@
                                                     @"apple10.png",
                                                     nil];
         
-        [self drawApples:images withRadius:40.0 withOffset:1.0];
-        [self drawApples:images2 withRadius:80.0 withOffset:1.2];
+        [self drawApples:images withRadius:50.0 withOffset:1.0];
+        [self drawApples:images2 withRadius:90.0 withOffset:1.2];
         
         diceImages = [[NSMutableArray alloc]init];
         CCTexture2D *dice1 = [[CCTextureCache sharedTextureCache] addImage:@"new_Dice1.png"];
@@ -144,7 +155,8 @@
         CGPoint position = {x,y};
         
         //AppleSprite *apple = [[AppleSprite alloc]initWith:position File:image arrayIndex:i];
-        AppleSprite *apple = [[AppleSprite alloc]initWith:position file:image arrayIndex:i];
+        NSInteger weight = [[self.model.weightTable valueForKey:image] integerValue];
+        AppleSprite *apple = [[AppleSprite alloc]initWith:position file:image arrayIndex:i weightValue:weight];
         [self addChild:apple.mySprite];
         [movableSprites addObject:apple];
     }
@@ -180,6 +192,8 @@
         
         [diceSprite runAction:[CCRepeat actionWithAction:rotSeq times:3]];*/
         int index = [self.model randomDice];
+        self.model.diceValue = index+1;
+        //self.model.currentPointsTotal
         CCTexture2D * newDice = [diceImages objectAtIndex:index];
         diceSprite.texture = newDice;
     }
@@ -212,7 +226,9 @@
                 NSLog(@"TouchDown");
                 AppleSprite *apple = [[AppleSprite alloc]initWith:selSprite.originalPosition
                                                          file:selSprite.originalFilename
-                                                        arrayIndex:selSprite.index];
+                                                        arrayIndex:selSprite.index
+                                      weightValue:selSprite.weight];
+                [self.model addPoints:selSprite.weight];
                 
                 [movableSprites replaceObjectAtIndex:selSprite.index withObject:apple];
                 selSprite.putInBasket = YES;

@@ -23,6 +23,7 @@
     CCSprite *basket;
     CCSprite *diceSprite;
     NSMutableArray *diceImages;
+    CCLabelBMFont *scoreLabel;
 }
 
 @property (strong, nonatomic) Model *model;
