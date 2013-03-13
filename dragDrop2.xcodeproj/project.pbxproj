@@ -133,6 +133,14 @@
 		0F52E62F16EF67DC00E5DA6C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F52E62E16EF67DC00E5DA6C /* AppDelegate.m */; };
 		0F52E63216EF67DC00E5DA6C /* HelloWorldLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F52E63116EF67DC00E5DA6C /* HelloWorldLayer.m */; };
 		0F52E63516EF67DC00E5DA6C /* IntroLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F52E63416EF67DC00E5DA6C /* IntroLayer.m */; };
+		0F52E64116EF69EC00E5DA6C /* blue-shooting-stars.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F52E63B16EF69EC00E5DA6C /* blue-shooting-stars.png */; };
+		0F52E64216EF69EC00E5DA6C /* attribution.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0F52E63C16EF69EC00E5DA6C /* attribution.txt */; };
+		0F52E64316EF69EC00E5DA6C /* bird.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F52E63D16EF69EC00E5DA6C /* bird.png */; };
+		0F52E64416EF69EC00E5DA6C /* turtle.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F52E63E16EF69EC00E5DA6C /* turtle.png */; };
+		0F52E64516EF69EC00E5DA6C /* cat.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F52E63F16EF69EC00E5DA6C /* cat.png */; };
+		0F52E64616EF69EC00E5DA6C /* dog.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F52E64016EF69EC00E5DA6C /* dog.png */; };
+		0F52E66716EF75D500E5DA6C /* blue-shooting-stars_portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F52E66616EF75D400E5DA6C /* blue-shooting-stars_portrait.png */; };
+		0F52E66D16EF835400E5DA6C /* AppleSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F52E66C16EF835400E5DA6C /* AppleSprite.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -398,6 +406,15 @@
 		0F52E63116EF67DC00E5DA6C /* HelloWorldLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloWorldLayer.m; sourceTree = "<group>"; };
 		0F52E63316EF67DC00E5DA6C /* IntroLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IntroLayer.h; sourceTree = "<group>"; };
 		0F52E63416EF67DC00E5DA6C /* IntroLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IntroLayer.m; sourceTree = "<group>"; };
+		0F52E63B16EF69EC00E5DA6C /* blue-shooting-stars.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blue-shooting-stars.png"; sourceTree = "<group>"; };
+		0F52E63C16EF69EC00E5DA6C /* attribution.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = attribution.txt; sourceTree = "<group>"; };
+		0F52E63D16EF69EC00E5DA6C /* bird.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bird.png; sourceTree = "<group>"; };
+		0F52E63E16EF69EC00E5DA6C /* turtle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = turtle.png; sourceTree = "<group>"; };
+		0F52E63F16EF69EC00E5DA6C /* cat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cat.png; sourceTree = "<group>"; };
+		0F52E64016EF69EC00E5DA6C /* dog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dog.png; sourceTree = "<group>"; };
+		0F52E66616EF75D400E5DA6C /* blue-shooting-stars_portrait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blue-shooting-stars_portrait.png"; sourceTree = "<group>"; };
+		0F52E66B16EF835400E5DA6C /* AppleSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppleSprite.h; sourceTree = "<group>"; };
+		0F52E66C16EF835400E5DA6C /* AppleSprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppleSprite.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -423,6 +440,7 @@
 		0F52E49416EF67D600E5DA6C = {
 			isa = PBXGroup;
 			children = (
+				0F52E66E16EFD58C00E5DA6C /* Custom Components */,
 				0F52E4B516EF67D700E5DA6C /* dragDrop2 */,
 				0F52E4A216EF67D600E5DA6C /* Frameworks */,
 				0F52E4A016EF67D600E5DA6C /* Products */,
@@ -456,12 +474,8 @@
 		0F52E4B516EF67D700E5DA6C /* dragDrop2 */ = {
 			isa = PBXGroup;
 			children = (
-				0F52E62D16EF67DC00E5DA6C /* AppDelegate.h */,
-				0F52E62E16EF67DC00E5DA6C /* AppDelegate.m */,
 				0F52E63016EF67DC00E5DA6C /* HelloWorldLayer.h */,
 				0F52E63116EF67DC00E5DA6C /* HelloWorldLayer.m */,
-				0F52E63316EF67DC00E5DA6C /* IntroLayer.h */,
-				0F52E63416EF67DC00E5DA6C /* IntroLayer.m */,
 				0F52E4B616EF67D700E5DA6C /* Resources */,
 				0F52E4D016EF67D700E5DA6C /* libs */,
 				0F52E62916EF67DC00E5DA6C /* Supporting Files */,
@@ -472,6 +486,13 @@
 		0F52E4B616EF67D700E5DA6C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				0F52E66616EF75D400E5DA6C /* blue-shooting-stars_portrait.png */,
+				0F52E63B16EF69EC00E5DA6C /* blue-shooting-stars.png */,
+				0F52E63C16EF69EC00E5DA6C /* attribution.txt */,
+				0F52E63D16EF69EC00E5DA6C /* bird.png */,
+				0F52E63E16EF69EC00E5DA6C /* turtle.png */,
+				0F52E63F16EF69EC00E5DA6C /* cat.png */,
+				0F52E64016EF69EC00E5DA6C /* dog.png */,
 				0F52E4B716EF67D700E5DA6C /* Default.png */,
 				0F52E4B916EF67D700E5DA6C /* Default-Landscape~ipad.png */,
 				0F52E4BB16EF67D700E5DA6C /* fps_images.png */,
@@ -826,10 +847,23 @@
 		0F52E62916EF67DC00E5DA6C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0F52E62D16EF67DC00E5DA6C /* AppDelegate.h */,
+				0F52E62E16EF67DC00E5DA6C /* AppDelegate.m */,
+				0F52E63316EF67DC00E5DA6C /* IntroLayer.h */,
+				0F52E63416EF67DC00E5DA6C /* IntroLayer.m */,
 				0F52E62A16EF67DC00E5DA6C /* Prefix.pch */,
 				0F52E62B16EF67DC00E5DA6C /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0F52E66E16EFD58C00E5DA6C /* Custom Components */ = {
+			isa = PBXGroup;
+			children = (
+				0F52E66B16EF835400E5DA6C /* AppleSprite.h */,
+				0F52E66C16EF835400E5DA6C /* AppleSprite.m */,
+			);
+			name = "Custom Components";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -895,6 +929,13 @@
 				0F52E4CC16EF67D700E5DA6C /* Icon@2x.png in Resources */,
 				0F52E4CF16EF67D700E5DA6C /* iTunesArtwork in Resources */,
 				0F52E60D16EF67DC00E5DA6C /* ChangeLog in Resources */,
+				0F52E64116EF69EC00E5DA6C /* blue-shooting-stars.png in Resources */,
+				0F52E64216EF69EC00E5DA6C /* attribution.txt in Resources */,
+				0F52E64316EF69EC00E5DA6C /* bird.png in Resources */,
+				0F52E64416EF69EC00E5DA6C /* turtle.png in Resources */,
+				0F52E64516EF69EC00E5DA6C /* cat.png in Resources */,
+				0F52E64616EF69EC00E5DA6C /* dog.png in Resources */,
+				0F52E66716EF75D500E5DA6C /* blue-shooting-stars_portrait.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1009,6 +1050,7 @@
 				0F52E62F16EF67DC00E5DA6C /* AppDelegate.m in Sources */,
 				0F52E63216EF67DC00E5DA6C /* HelloWorldLayer.m in Sources */,
 				0F52E63516EF67DC00E5DA6C /* IntroLayer.m in Sources */,
+				0F52E66D16EF835400E5DA6C /* AppleSprite.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
