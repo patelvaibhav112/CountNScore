@@ -30,15 +30,15 @@
                            nil];
         NSArray *weight = [NSArray arrayWithObjects:
                           [NSNumber numberWithInt:1],
-                          [NSNumber numberWithInt:2],
-                          [NSNumber numberWithInt:3],
-                          [NSNumber numberWithInt:4],
-                           [NSNumber numberWithInt:5],
-                           [NSNumber numberWithInt:6],
-                           [NSNumber numberWithInt:7],
-                           [NSNumber numberWithInt:8],
-                           [NSNumber numberWithInt:9],
-                           [NSNumber numberWithInt:10],
+                          [NSNumber numberWithInt:1],
+                          [NSNumber numberWithInt:1],
+                          [NSNumber numberWithInt:1],
+                           [NSNumber numberWithInt:1],
+                           [NSNumber numberWithInt:1],
+                           [NSNumber numberWithInt:1],
+                           [NSNumber numberWithInt:1],
+                           [NSNumber numberWithInt:1],
+                           [NSNumber numberWithInt:1],
                            nil];
         _weightTable = [[NSDictionary alloc]initWithObjects:weight forKeys:images];
     }
@@ -52,8 +52,7 @@
 
 -(void)resetAll
 {
-    self.currentPointsTotal = 0;
-    self.currentScore = 0;
+    self.currentPointsTotal = -1;
     self.diceValue = 0;
 }
 

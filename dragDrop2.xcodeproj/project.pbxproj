@@ -24,20 +24,6 @@
 		0F508FB016F0D8CA00FC5C40 /* apple3.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F508FA116F0D8CA00FC5C40 /* apple3.png */; };
 		0F508FB116F0D8CA00FC5C40 /* apple2.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F508FA216F0D8CA00FC5C40 /* apple2.png */; };
 		0F508FB216F0D8CA00FC5C40 /* apple1.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F508FA316F0D8CA00FC5C40 /* apple1.png */; };
-		0F508FC116F129D100FC5C40 /* lucida_fancy.fnt in Resources */ = {isa = PBXBuildFile; fileRef = 0F508FB316F129C700FC5C40 /* lucida_fancy.fnt */; };
-		0F508FC216F129D100FC5C40 /* lucida_fancy1.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F508FB416F129C700FC5C40 /* lucida_fancy1.png */; };
-		0F508FC316F129D100FC5C40 /* lucida_fancy2.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F508FB516F129C800FC5C40 /* lucida_fancy2.png */; };
-		0F508FC416F129D100FC5C40 /* lucida_fancy3.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F508FB616F129C900FC5C40 /* lucida_fancy3.png */; };
-		0F508FC516F129D100FC5C40 /* lucida_fancy4.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F508FB716F129C900FC5C40 /* lucida_fancy4.png */; };
-		0F508FC616F129D100FC5C40 /* lucida_fancy5.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F508FB816F129CA00FC5C40 /* lucida_fancy5.png */; };
-		0F508FC716F129D100FC5C40 /* lucida_fancy6.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F508FB916F129CB00FC5C40 /* lucida_fancy6.png */; };
-		0F508FC816F129D100FC5C40 /* lucida_fancy7.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F508FBA16F129CB00FC5C40 /* lucida_fancy7.png */; };
-		0F508FC916F129D100FC5C40 /* lucida_fancy8.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F508FBB16F129CC00FC5C40 /* lucida_fancy8.png */; };
-		0F508FCA16F129D100FC5C40 /* lucida_fancy9.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F508FBC16F129CD00FC5C40 /* lucida_fancy9.png */; };
-		0F508FCB16F129D100FC5C40 /* lucida_fancy10.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F508FBD16F129CD00FC5C40 /* lucida_fancy10.png */; };
-		0F508FCC16F129D100FC5C40 /* lucida_fancy11.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F508FBE16F129CE00FC5C40 /* lucida_fancy11.png */; };
-		0F508FCD16F129D100FC5C40 /* lucida_fancy12.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F508FBF16F129D000FC5C40 /* lucida_fancy12.png */; };
-		0F508FCE16F129D100FC5C40 /* lucida_fancy13.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F508FC016F129D000FC5C40 /* lucida_fancy13.png */; };
 		0F508FD316F12B6B00FC5C40 /* Arial-hd.fnt in Resources */ = {isa = PBXBuildFile; fileRef = 0F508FCF16F12B6400FC5C40 /* Arial-hd.fnt */; };
 		0F508FD416F12B6B00FC5C40 /* Arial-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F508FD016F12B6600FC5C40 /* Arial-hd.png */; };
 		0F508FD516F12B6B00FC5C40 /* Arial.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F508FD116F12B6800FC5C40 /* Arial.png */; };
@@ -168,12 +154,7 @@
 		0F52E62F16EF67DC00E5DA6C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F52E62E16EF67DC00E5DA6C /* AppDelegate.m */; };
 		0F52E63216EF67DC00E5DA6C /* HelloWorldLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F52E63116EF67DC00E5DA6C /* HelloWorldLayer.m */; };
 		0F52E63516EF67DC00E5DA6C /* IntroLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F52E63416EF67DC00E5DA6C /* IntroLayer.m */; };
-		0F52E64116EF69EC00E5DA6C /* blue-shooting-stars.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F52E63B16EF69EC00E5DA6C /* blue-shooting-stars.png */; };
 		0F52E64216EF69EC00E5DA6C /* attribution.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0F52E63C16EF69EC00E5DA6C /* attribution.txt */; };
-		0F52E64316EF69EC00E5DA6C /* bird.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F52E63D16EF69EC00E5DA6C /* bird.png */; };
-		0F52E64416EF69EC00E5DA6C /* turtle.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F52E63E16EF69EC00E5DA6C /* turtle.png */; };
-		0F52E64516EF69EC00E5DA6C /* cat.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F52E63F16EF69EC00E5DA6C /* cat.png */; };
-		0F52E64616EF69EC00E5DA6C /* dog.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F52E64016EF69EC00E5DA6C /* dog.png */; };
 		0F52E66716EF75D500E5DA6C /* blue-shooting-stars_portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F52E66616EF75D400E5DA6C /* blue-shooting-stars_portrait.png */; };
 		0F52E66D16EF835400E5DA6C /* AppleSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F52E66C16EF835400E5DA6C /* AppleSprite.m */; };
 		0F52E68116F03AD600E5DA6C /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F52E68016F03AD600E5DA6C /* Model.m */; };
@@ -204,20 +185,6 @@
 		0F508FA116F0D8CA00FC5C40 /* apple3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = apple3.png; sourceTree = "<group>"; };
 		0F508FA216F0D8CA00FC5C40 /* apple2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = apple2.png; sourceTree = "<group>"; };
 		0F508FA316F0D8CA00FC5C40 /* apple1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = apple1.png; sourceTree = "<group>"; };
-		0F508FB316F129C700FC5C40 /* lucida_fancy.fnt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lucida_fancy.fnt; sourceTree = "<group>"; };
-		0F508FB416F129C700FC5C40 /* lucida_fancy1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lucida_fancy1.png; sourceTree = "<group>"; };
-		0F508FB516F129C800FC5C40 /* lucida_fancy2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lucida_fancy2.png; sourceTree = "<group>"; };
-		0F508FB616F129C900FC5C40 /* lucida_fancy3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lucida_fancy3.png; sourceTree = "<group>"; };
-		0F508FB716F129C900FC5C40 /* lucida_fancy4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lucida_fancy4.png; sourceTree = "<group>"; };
-		0F508FB816F129CA00FC5C40 /* lucida_fancy5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lucida_fancy5.png; sourceTree = "<group>"; };
-		0F508FB916F129CB00FC5C40 /* lucida_fancy6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lucida_fancy6.png; sourceTree = "<group>"; };
-		0F508FBA16F129CB00FC5C40 /* lucida_fancy7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lucida_fancy7.png; sourceTree = "<group>"; };
-		0F508FBB16F129CC00FC5C40 /* lucida_fancy8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lucida_fancy8.png; sourceTree = "<group>"; };
-		0F508FBC16F129CD00FC5C40 /* lucida_fancy9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lucida_fancy9.png; sourceTree = "<group>"; };
-		0F508FBD16F129CD00FC5C40 /* lucida_fancy10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lucida_fancy10.png; sourceTree = "<group>"; };
-		0F508FBE16F129CE00FC5C40 /* lucida_fancy11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lucida_fancy11.png; sourceTree = "<group>"; };
-		0F508FBF16F129D000FC5C40 /* lucida_fancy12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lucida_fancy12.png; sourceTree = "<group>"; };
-		0F508FC016F129D000FC5C40 /* lucida_fancy13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lucida_fancy13.png; sourceTree = "<group>"; };
 		0F508FCF16F12B6400FC5C40 /* Arial-hd.fnt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Arial-hd.fnt"; sourceTree = "<group>"; };
 		0F508FD016F12B6600FC5C40 /* Arial-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Arial-hd.png"; sourceTree = "<group>"; };
 		0F508FD116F12B6800FC5C40 /* Arial.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Arial.png; sourceTree = "<group>"; };
@@ -484,12 +451,7 @@
 		0F52E63116EF67DC00E5DA6C /* HelloWorldLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloWorldLayer.m; sourceTree = "<group>"; };
 		0F52E63316EF67DC00E5DA6C /* IntroLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IntroLayer.h; sourceTree = "<group>"; };
 		0F52E63416EF67DC00E5DA6C /* IntroLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IntroLayer.m; sourceTree = "<group>"; };
-		0F52E63B16EF69EC00E5DA6C /* blue-shooting-stars.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blue-shooting-stars.png"; sourceTree = "<group>"; };
 		0F52E63C16EF69EC00E5DA6C /* attribution.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = attribution.txt; sourceTree = "<group>"; };
-		0F52E63D16EF69EC00E5DA6C /* bird.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bird.png; sourceTree = "<group>"; };
-		0F52E63E16EF69EC00E5DA6C /* turtle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = turtle.png; sourceTree = "<group>"; };
-		0F52E63F16EF69EC00E5DA6C /* cat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cat.png; sourceTree = "<group>"; };
-		0F52E64016EF69EC00E5DA6C /* dog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dog.png; sourceTree = "<group>"; };
 		0F52E66616EF75D400E5DA6C /* blue-shooting-stars_portrait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blue-shooting-stars_portrait.png"; sourceTree = "<group>"; };
 		0F52E66B16EF835400E5DA6C /* AppleSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppleSprite.h; sourceTree = "<group>"; };
 		0F52E66C16EF835400E5DA6C /* AppleSprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppleSprite.m; sourceTree = "<group>"; };
@@ -576,20 +538,6 @@
 				0F508FD016F12B6600FC5C40 /* Arial-hd.png */,
 				0F508FD116F12B6800FC5C40 /* Arial.png */,
 				0F508FD216F12B6900FC5C40 /* Arial.fnt */,
-				0F508FB316F129C700FC5C40 /* lucida_fancy.fnt */,
-				0F508FB416F129C700FC5C40 /* lucida_fancy1.png */,
-				0F508FB516F129C800FC5C40 /* lucida_fancy2.png */,
-				0F508FB616F129C900FC5C40 /* lucida_fancy3.png */,
-				0F508FB716F129C900FC5C40 /* lucida_fancy4.png */,
-				0F508FB816F129CA00FC5C40 /* lucida_fancy5.png */,
-				0F508FB916F129CB00FC5C40 /* lucida_fancy6.png */,
-				0F508FBA16F129CB00FC5C40 /* lucida_fancy7.png */,
-				0F508FBB16F129CC00FC5C40 /* lucida_fancy8.png */,
-				0F508FBC16F129CD00FC5C40 /* lucida_fancy9.png */,
-				0F508FBD16F129CD00FC5C40 /* lucida_fancy10.png */,
-				0F508FBE16F129CE00FC5C40 /* lucida_fancy11.png */,
-				0F508FBF16F129D000FC5C40 /* lucida_fancy12.png */,
-				0F508FC016F129D000FC5C40 /* lucida_fancy13.png */,
 				0F508F9516F0D8CA00FC5C40 /* terran.png */,
 				0F508F9B16F0D8CA00FC5C40 /* apple9.png */,
 				0F508F9616F0D8CA00FC5C40 /* bucket.png */,
@@ -613,12 +561,7 @@
 				0F52E6A416F068B800E5DA6C /* new_dice4.png */,
 				0F52E6A516F068B800E5DA6C /* new_dice5.png */,
 				0F52E6A616F068B900E5DA6C /* new_dice6.png */,
-				0F52E63B16EF69EC00E5DA6C /* blue-shooting-stars.png */,
 				0F52E63C16EF69EC00E5DA6C /* attribution.txt */,
-				0F52E63D16EF69EC00E5DA6C /* bird.png */,
-				0F52E63E16EF69EC00E5DA6C /* turtle.png */,
-				0F52E63F16EF69EC00E5DA6C /* cat.png */,
-				0F52E64016EF69EC00E5DA6C /* dog.png */,
 				0F52E4B716EF67D700E5DA6C /* Default.png */,
 				0F52E4B916EF67D700E5DA6C /* Default-Landscape~ipad.png */,
 				0F52E4BB16EF67D700E5DA6C /* fps_images.png */,
@@ -1059,12 +1002,7 @@
 				0F52E4CC16EF67D700E5DA6C /* Icon@2x.png in Resources */,
 				0F52E4CF16EF67D700E5DA6C /* iTunesArtwork in Resources */,
 				0F52E60D16EF67DC00E5DA6C /* ChangeLog in Resources */,
-				0F52E64116EF69EC00E5DA6C /* blue-shooting-stars.png in Resources */,
 				0F52E64216EF69EC00E5DA6C /* attribution.txt in Resources */,
-				0F52E64316EF69EC00E5DA6C /* bird.png in Resources */,
-				0F52E64416EF69EC00E5DA6C /* turtle.png in Resources */,
-				0F52E64516EF69EC00E5DA6C /* cat.png in Resources */,
-				0F52E64616EF69EC00E5DA6C /* dog.png in Resources */,
 				0F52E66716EF75D500E5DA6C /* blue-shooting-stars_portrait.png in Resources */,
 				0F52E69116F0483200E5DA6C /* Untitled-2Artboard-1Background.png in Resources */,
 				0F52E6A816F068BB00E5DA6C /* new_dice2.png in Resources */,
@@ -1088,20 +1026,6 @@
 				0F508FB016F0D8CA00FC5C40 /* apple3.png in Resources */,
 				0F508FB116F0D8CA00FC5C40 /* apple2.png in Resources */,
 				0F508FB216F0D8CA00FC5C40 /* apple1.png in Resources */,
-				0F508FC116F129D100FC5C40 /* lucida_fancy.fnt in Resources */,
-				0F508FC216F129D100FC5C40 /* lucida_fancy1.png in Resources */,
-				0F508FC316F129D100FC5C40 /* lucida_fancy2.png in Resources */,
-				0F508FC416F129D100FC5C40 /* lucida_fancy3.png in Resources */,
-				0F508FC516F129D100FC5C40 /* lucida_fancy4.png in Resources */,
-				0F508FC616F129D100FC5C40 /* lucida_fancy5.png in Resources */,
-				0F508FC716F129D100FC5C40 /* lucida_fancy6.png in Resources */,
-				0F508FC816F129D100FC5C40 /* lucida_fancy7.png in Resources */,
-				0F508FC916F129D100FC5C40 /* lucida_fancy8.png in Resources */,
-				0F508FCA16F129D100FC5C40 /* lucida_fancy9.png in Resources */,
-				0F508FCB16F129D100FC5C40 /* lucida_fancy10.png in Resources */,
-				0F508FCC16F129D100FC5C40 /* lucida_fancy11.png in Resources */,
-				0F508FCD16F129D100FC5C40 /* lucida_fancy12.png in Resources */,
-				0F508FCE16F129D100FC5C40 /* lucida_fancy13.png in Resources */,
 				0F508FD316F12B6B00FC5C40 /* Arial-hd.fnt in Resources */,
 				0F508FD416F12B6B00FC5C40 /* Arial-hd.png in Resources */,
 				0F508FD516F12B6B00FC5C40 /* Arial.png in Resources */,

@@ -24,6 +24,7 @@
     CCSprite *diceSprite;
     NSMutableArray *diceImages;
     CCLabelBMFont *scoreLabel;
+    CCSprite *finishSign;
 }
 
 @property (strong, nonatomic) Model *model;

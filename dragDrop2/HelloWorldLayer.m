@@ -47,6 +47,11 @@
         background.anchorPoint = ccp(0,0);
         [self addChild:background];
         
+        CCSprite *terran = [CCSprite spriteWithFile:@"terran.png"];
+        terran.anchorPoint = ccp(0,0);
+        [terran setScale:0.60];
+        [self addChild:terran];
+        
         CCSprite *tree = [CCSprite spriteWithFile:@"tree.png"];
         tree.anchorPoint = ccp(0,0);
         tree.position = ccp(0, 50);
@@ -62,6 +67,7 @@
         scoreLabel = [[CCLabelBMFont alloc]initWithString:@"0" fntFile:@"Arial-hd.fnt"];
         scoreLabel.position = ccp(pie.contentSize.width/2, pie.contentSize.height/2);
         [pie addChild:scoreLabel];
+        pie.opacity = 50.0;
         
         basket = [CCSprite spriteWithFile:@"bucket.png"];
         basket.anchorPoint = ccp(0,0);
@@ -69,6 +75,11 @@
         [basket setScale:0.60];
         [self addChild:basket];
         
+        finishSign = [CCSprite spriteWithFile:@"sign.png"];
+        finishSign.anchorPoint = ccp(0,0);
+        //finishSign.position = ccp(10,winSize.height - (finishSign.contentSize.height*60));
+        [finishSign setScale:0.60];
+        [self addChild:finishSign];
         
         movableSprites = [[NSMutableArray alloc] init];
         NSArray *images = [NSArray arrayWithObjects:@"apple1.png",
@@ -193,9 +204,24 @@
         [diceSprite runAction:[CCRepeat actionWithAction:rotSeq times:3]];*/
         int index = [self.model randomDice];
         self.model.diceValue = index+1;
-        //self.model.currentPointsTotal
+
+        
         CCTexture2D * newDice = [diceImages objectAtIndex:index];
         diceSprite.texture = newDice;
+    }
+    
+    if(CGRectContainsPoint(finishSign.boundingBox, touchLocation))
+    {
+        //popup a message of success or failure
+        
+        //update the score
+        if(self.model.diceValue == self.model.currentPointsTotal)
+        {
+            self.model.currentScore++;
+            [scoreLabel setString:[NSString stringWithFormat:@"%d",self.model.currentScore]];
+        }
+        
+        [self.model resetAll];
     }
 }
 
