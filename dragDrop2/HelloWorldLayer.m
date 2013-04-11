@@ -17,6 +17,7 @@
 #include <math.h>
 #import "Model.h"
 #import "CCShake.h"
+#import "ModalAlert.h"
 
 // HelloWorldLayer implementation
 @implementation HelloWorldLayer
@@ -128,12 +129,6 @@
         [diceSprite setScale:0.50];
         [self addChild:diceSprite];
         
-        
-        
-        
-        
-        
-        
         [[[CCDirector sharedDirector] touchDispatcher] addTargetedDelegate:self priority:0 swallowsTouches:YES];
 
     }
@@ -212,15 +207,38 @@
     
     if(CGRectContainsPoint(finishSign.boundingBox, touchLocation))
     {
-        //popup a message of success or failure
-        
+       
         //update the score
         if(self.model.diceValue == self.model.currentPointsTotal)
         {
             self.model.currentScore++;
             [scoreLabel setString:[NSString stringWithFormat:@"%d",self.model.currentScore]];
+            //popup a message of success or failure
+            [ModalAlert Ask: @"You won the round. Do you want to play the next round?"
+                    onLayer:self // this is usually the current scene layer
+                   yesBlock: ^{
+                       // code that should be executed on "yes" goes here
+                       
+                   }
+                    noBlock: ^{
+                        // code that should be executed on "no" goes here
+                        
+                    }];
         }
-        
+        else
+        {
+            //popup a message of success or failure
+            [ModalAlert Ask: @"You lost! Do you want to play the next round?"
+                onLayer:self // this is usually the current scene layer
+                   yesBlock: ^{
+                       // code that should be executed on "yes" goes here
+                   
+                   }
+                    noBlock: ^{
+                        // code that should be executed on "no" goes here
+                    
+                    }];
+        }
         [self.model resetAll];
     }
 }
@@ -258,7 +276,7 @@
                 
                 [movableSprites replaceObjectAtIndex:selSprite.index withObject:apple];
                 selSprite.putInBasket = YES;
-                selSprite.mySprite.opacity = 50;
+                selSprite.mySprite.opacity = 80;
                 
                 [self addChild:apple.mySprite];
             }
